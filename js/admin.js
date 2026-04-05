@@ -1,6 +1,6 @@
 // FE/js/admin.js
 
-const API_BASE = 'http://localhost:8080';
+const API_BASE = 'https://webbantruyen-backend-latest.onrender.com/api';
 
 // Helper lấy Token
 const getToken = () => localStorage.getItem('authToken');

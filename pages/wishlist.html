@@ -1,110 +1,115 @@
 <!doctype html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản Phẩm Yêu Thích - Kaleidoscope</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/wishlist.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sản Phẩm Yêu Thích - Kaleidoscope</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/wishlist.css" />
-</head>
-
-<body>
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-bar-left">
-        <div class="social-icons">
-          <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="zalo"><i class="fa-solid fa-comment-dots"></i></a>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-left">
+          <div class="social-icons">
+            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="zalo"
+              ><i class="fa-solid fa-comment-dots"></i
+            ></a>
+          </div>
+          <span class="about-link">Về Kaleidoscope</span>
         </div>
-        <span class="about-link">Về Kaleidoscope</span>
-      </div>
-      <div class="top-bar-right">
-        <i class="fa-solid fa-phone"></i>
-        <span>Contact: (+84) 97 182 50 26</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Header -->
-  <header class="main-header">
-    <div class="container header-inner">
-      <div class="logo">
-        <img src="../images/logo.png" alt="Kaleidoscope Logo" />
-        <span class="logo-text">Kaleidoscope</span>
-      </div>
-
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả..." />
-      </div>
-
-      <div class="header-actions">
-        <div class="action-item has-badge" data-badge="cart">
-          <span class="action-badge hidden"></span>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span><a href="cart.html">Giỏ hàng</a></span>
+        <div class="top-bar-right">
+          <i class="fa-solid fa-phone"></i>
+          <span>Contact: (+84) 97 182 50 26</span>
         </div>
-        <div class="action-item has-badge" data-badge="favorite">
-          <span class="action-badge hidden"></span>
-          <i class="fa-solid fa-heart"></i>
-          <span><a href="wishlist.html">Yêu thích</a></span>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img src="../images/logo.png" alt="Kaleidoscope Logo" />
+          <span class="logo-text">Kaleidoscope</span>
         </div>
-        <a href="auth.html" class="action-item header-user-link">
-          <i class="fa-solid fa-user"></i>
-          <span class="header-user-name">Tài khoản</span>
-        </a>
+
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả..." />
+        </div>
+
+        <div class="header-actions">
+          <div class="action-item has-badge" data-badge="cart">
+            <span class="action-badge hidden"></span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span><a href="cart.html">Giỏ hàng</a></span>
+          </div>
+          <div class="action-item has-badge" data-badge="favorite">
+            <span class="action-badge hidden"></span>
+            <i class="fa-solid fa-heart"></i>
+            <span><a href="wishlist.html">Yêu thích</a></span>
+          </div>
+          <a href="auth.html" class="action-item header-user-link">
+            <i class="fa-solid fa-user"></i>
+            <span class="header-user-name">Tài khoản</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+      <div class="container">
+        <a href="../home.html" class="nav-link">TẤT CẢ SẢN PHẨM</a>
+        <a href="#" class="nav-link">TRUYỆN MỚI</a>
+        <a href="#" class="nav-link">DỊCH TRUYỆN</a>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="../home.html">Trang chủ</a>
+        <span>/</span>
+        <span>Sản phẩm yêu thích</span>
       </div>
     </div>
-  </header>
 
-  <!-- Navigation -->
-  <nav class="nav-menu">
-    <div class="container">
-      <a href="../home.html" class="nav-link">TẤT CẢ SẢN PHẨM</a>
-      <a href="#" class="nav-link">TRUYỆN MỚI</a>
-      <a href="#" class="nav-link">DỊCH TRUYỆN</a>
-    </div>
-  </nav>
+    <!-- Wishlist Section -->
+    <section class="wishlist-section">
+      <div class="container">
+        <h1 class="page-title">SẢN PHẨM YÊU THÍCH</h1>
 
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <div class="container">
-      <a href="../home.html">Trang chủ</a>
-      <span>/</span>
-      <span>Sản phẩm yêu thích</span>
-    </div>
-  </div>
+        <div class="wishlist-controls">
+          <p class="wishlist-count">
+            Bạn có <span class="count">4</span> sản phẩm yêu thích
+          </p>
+          <button class="btn-move-all">Thêm tất cả vào giỏ hàng</button>
+        </div>
 
-  <!-- Wishlist Section -->
-  <section class="wishlist-section">
-    <div class="container">
-      <h1 class="page-title">SẢN PHẨM YÊU THÍCH</h1>
-
-      <div class="wishlist-controls">
-        <p class="wishlist-count">
-          Bạn có <span class="count">4</span> sản phẩm yêu thích
-        </p>
-        <button class="btn-move-all">Thêm tất cả vào giỏ hàng</button>
+        <div class="wishlist-products">
+          <!-- Products will be loaded here via JS -->
+          <p class="loading">Đang tải danh sách yêu thích...</p>
+        </div>
       </div>
+    </section>
 
-      <div class="wishlist-products">
-        <!-- Products will be loaded here via JS -->
-        <p class="loading">Đang tải danh sách yêu thích...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Configuration -->
-  <script src="../js/config.js"></script>
-  <!-- Custom JS -->
-  <script src="../js/main.js"></script>
-  <script src="../js/wishlist.js"></script>
-</body>
-
+    <!-- Configuration -->
+    <script src="../js/config.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/wishlist.js"></script>
+  </body>
 </html>

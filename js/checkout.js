@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api'
+const BASE_URL = 'https://webbantruyen-backend-latest.onrender.com/api'
 
 function getToken() { return localStorage.getItem('authToken') }
 function authHeaders() {

@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Wishlist Page Initialized!");
 
-    const API_BASE = 'http://localhost:8080';
+    const API_BASE = 'https://webbantruyen-backend-latest.onrender.com/api';
     const getToken = () => localStorage.getItem('authToken');
 
     const apiRequest = async (path, options = {}) => {

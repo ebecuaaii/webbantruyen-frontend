@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coupon/Khuyến mãi - Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+
+<body class="admin-layout">
+  <!-- Sidebar -->
+  <aside class="admin-sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+        <span>Kaleidoscope</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-chart-line"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="admin-products.html" class="nav-item">
+        <i class="fas fa-box"></i>
+        <span>Quản lý sản phẩm</span>
+      </a>
+      <a href="admin-categories.html" class="nav-item">
+        <i class="fas fa-list"></i>
+        <span>Quản lý danh mục</span>
+      </a>
+      <a href="admin-orders.html" class="nav-item">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Quản lý đơn hàng</span>
+      </a>
+      <a href="admin-users.html" class="nav-item">
+        <i class="fas fa-users"></i>
+        <span>Quản lý tài khoản</span>
+      </a>
+      <a href="admin-coupons.html" class="nav-item active">
+        <i class="fas fa-ticket-alt"></i>
+        <span>Coupon/Khuyến mãi</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="admin-profile.html" class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Cài đặt</span>
+      </a>
+      <a href="#" class="nav-item logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Đăng xuất</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <!-- Top Bar -->
+    <header class="admin-header">
+      <div class="header-left">
+        <h1>Coupon/Khuyến mãi</h1>
+      </div>
+      <div class="header-right">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Tìm kiếm..." />
+        </div>
+        <div class="notification-icon">
+          <i class="fas fa-bell"></i>
+          <span class="notification-badge">3</span>
+        </div>
+        <div class="header-user">
+          <img src="https://placehold.co/32x32/9f2425/ffffff?text=A" alt="Admin" />
+          <div class="user-info">
+            <span class="user-name">Super Admin</span>
+            <span class="user-email">admin@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="admin-content">
+      <div class="page-header">
+        <h2>Danh sách Coupon/Khuyến mãi</h2>
+        <button class="btn btn-primary" id="btnAddCoupon"
+          style="background:#9f2425;color:#fff;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;">
+          <i class="fas fa-plus"></i> Thêm Coupon
+        </button>
+      </div>
+
+      <div class="table-controls">
+        <div class="filter-group">
+          <select class="form-control">
+            <option>Tất cả loại</option>
+            <option>Phần trăm</option>
+            <option>Tiền mặt</option>
+            <option>Miễn phí vận chuyển</option>
+          </select>
+          <select class="form-control">
+            <option>Tất cả trạng thái</option>
+            <option>Đang hoạt động</option>
+            <option>Sắp diễn ra</option>
+            <option>Đã kết thúc</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>
+                <input type="checkbox" class="select-all" />
+              </th>
+              <th>Mã Coupon</th>
+              <th>Loại</th>
+              <th>Giá trị</th>
+              <th>Số lượng</th>
+              <th>Ngày bắt đầu</th>
+              <th>Ngày kết thúc</th>
+              <th>Trạng thái</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="couponTableBody">
+            <tr>
+              <td colspan="9" style="text-align:center">�ang t?i...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <button class="btn-paging" disabled>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn-paging active">1</button>
+        <button class="btn-paging">2</button>
+        <button class="btn-paging">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal Coupon -->
+  <div id="couponModal"
+    style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9999;align-items:center;justify-content:center;">
+    <div
+      style="background:#fff;border-radius:12px;padding:32px;width:500px;max-width:95vw;max-height:90vh;overflow-y:auto;">
+      <h3 style="margin:0 0 20px;">Thêm / Sửa Coupon</h3>
+      <form id="couponForm">
+        <input type="hidden" name="id" />
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div style="grid-column:1/-1;">
+            <label style="font-size:13px;font-weight:600;">Mã coupon *</label>
+            <input name="code" type="text" placeholder="VD: SAVE20" required
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div style="grid-column:1/-1;">
+            <label style="font-size:13px;font-weight:600;">Mô tả</label>
+            <input name="description" type="text" placeholder="Mô tả coupon"
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;">Giảm % (để trống nếu dùng tiền)</label>
+            <input name="discountPercent" type="number" min="0" max="100" placeholder="VD: 20"
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;">Giảm tiền (để trống nếu dùng %)</label>
+            <input name="discountAmount" type="number" min="0" placeholder="VD: 50000"
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;">Đơn tối thiểu (đ)</label>
+            <input name="minOrderAmount" type="number" min="0" placeholder="VD: 200000"
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:13px;font-weight:600;">Số lượt dùng tối đa</label>
+            <input name="maxUsage" type="number" min="0" placeholder="Để trống = không giới hạn"
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div style="grid-column:1/-1;">
+            <label style="font-size:13px;font-weight:600;">Ngày hết hạn</label>
+            <input name="expiresAt" type="datetime-local"
+              style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;box-sizing:border-box;" />
+          </div>
+          <div style="grid-column:1/-1;display:flex;align-items:center;gap:8px;">
+            <input name="active" type="checkbox" checked id="activeCheck" />
+            <label for="activeCheck" style="font-size:13px;font-weight:600;">Kích hoạt</label>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:20px;">
+          <button type="button" id="btnCloseCouponModal"
+            style="padding:8px 20px;border:1px solid #ddd;border-radius:8px;cursor:pointer;background:#fff;">Hủy</button>
+          <button type="submit"
+            style="padding:8px 20px;background:#9f2425;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;">Lưu</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/admin.js"></script>
+  <script>
+    document.getElementById('btnAddCoupon')?.addEventListener('click', () => {
+      const modal = document.getElementById('couponModal')
+      modal.querySelector('[name="id"]').value = ''
+      modal.querySelector('form').reset()
+      modal.style.display = 'flex'
+    })
+    document.getElementById('btnCloseCouponModal')?.addEventListener('click', () => {
+      document.getElementById('couponModal').style.display = 'none'
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleidoscope - Admin Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="auth-shell admin">
+    <div class="auth-card wide">
+        <div class="auth-header">
+            <div class="auth-brand">
+                <img src="../images/logo.png" alt="Kaleidoscope Logo">
+                <span>Kaleidoscope</span>
+            </div>
+            <a class="auth-link" href="login.html">User đăng nhập</a>
+        </div>
+        <h1>ADMIN - ĐĂNG NHẬP</h1>
+        <form class="auth-form" id="adminLoginForm">
+            <label>Email hoặc Username *</label>
+            <input type="text" name="usernameOrEmail" placeholder="Nhập email hoặc username" required>
+
+            <label>Mật khẩu *</label>
+            <input type="password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <button class="auth-btn primary" type="submit">ĐĂNG NHẬP</button>
+        </form>
+        <div class="auth-foot">
+            <a href="auth.html">Quay lại trang chọn đăng nhập</a>
+        </div>
+    </div>
+    <!-- Configuration -->
+    <script src="../js/config.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

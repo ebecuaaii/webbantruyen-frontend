@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaleidoscope - Chi tiết tin tức</title>
+  <!-- FontAwesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/news-detail.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="social-icons">
+          <a title="Facebook" href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a title="Instagram" href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a title="Zalo" href="#" class="zalo"><i class="fa-solid fa-comment-dots"></i></a>
+        </div>
+        <span class="about-link">Về Kaleidoscope</span>
+      </div>
+      <div class="top-bar-right">
+        <i class="fa-solid fa-phone"></i>
+        <span>Contact: (+84) 97 182 50 26</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="../index.html" style="display: flex; flex-direction: column; align-items: center">
+          <img src="../images/logo.png" alt="Kaleidoscope Logo" />
+          <span class="logo-text">Kaleidoscope</span>
+        </a>
+      </div>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả..." />
+      </div>
+
+      <div class="header-actions">
+        <div class="action-item has-badge" data-badge="cart">
+          <span class="action-badge hidden"></span>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Giỏ hàng</span>
+        </div>
+        <div class="action-item has-badge" data-badge="favorite">
+          <span class="action-badge hidden"></span>
+          <i class="fa-regular fa-heart"></i>
+          <span>Yêu thích</span>
+        </div>
+        <a href="auth.html" class="action-item header-user-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="header-user-name">Tài khoản</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="products.html" class="nav-btn">TẤT CẢ SẢN PHẨM</a></li>
+        <li>
+          <a href="news.html" class="nav-btn" style="border: 1px solid #777">TIN TỨC</a>
+        </li>
+        <li><a href="about.html" class="nav-btn">GIỚI THIỆU</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="news.html">Tin tức</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <span id="newsDetailBreadcrumbTitle" style="font-weight: 700; color: #000; text-transform: uppercase">HỘI SÁCH
+          KALEIDOSCOPE DỌN KHO ĐÓN TẾT 2026</span>
+      </div>
+
+      <!-- News Detail Container -->
+      <div class="news-detail-container">
+        <!-- Main Content -->
+        <div class="news-detail-main">
+          <div class="nd-meta-box">
+            <div class="nd-date" id="newsDetailPublishedAt">Ngày đăng: Thứ 5, 22/01/2026</div>
+            <div class="nd-share">
+              Chia sẻ:
+              <a href="#" class="fb-icon" title="Share on Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="ig-icon" title="Share on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="nd-hero-image">
+            <!-- In real case this might be a poster image. We use placeholder that mimics the shape. -->
+            <img id="newsDetailThumbnail" src="https://placehold.co/800x450/fff/333?text=Don+Kho+Don+Tet"
+              alt="Poster dọn kho đón Tết 2026" />
+          </div>
+
+          <h1 class="nd-title" id="newsDetailTitle">
+            HỘI SÁCH KALEIDOSCOPE DỌN KHO ĐÓN TẾT 2026<br />
+            (26/01/2026 - 06/02/2026)
+          </h1>
+
+          <div class="nd-content" id="newsDetailContent">
+            <p>
+              Mỗi dịp Tết đến xuân về, Hội sách Kaleidoscope - Dọn kho Đón Tết
+              lại trở thành điểm hẹn quen thuộc của đông đảo bạn đọc trên cả
+              nước. Không chỉ là dịp mua sách giá tốt, đây còn là thời điểm để
+              bạn đọc chọn sách đọc Tết, mua quà tặng người thân và khởi đầu
+              năm mới bằng những trang sách mới.
+            </p>
+            <p>
+              Năm 2026, Hội sách Kaleidoscope Dọn kho Đón Tết chính thức diễn
+              ra tại TP.HCM, với quy mô lớn, thời gian kéo dài liên tục nhiều
+              ngày cùng hàng loạt ưu đãi, quà tặng và hoạt động đặc biệt dành
+              riêng cho dịp đầu năm.
+            </p>
+
+            <h4>1. HỘI SÁCH DỌN KHO ĐÓN TẾT 2026</h4>
+            <ul>
+              <li>
+                <strong>Thời gian:</strong> 8h00 - 22h00 | Từ ngày 26/01/2026
+                đến 06/02/2026
+              </li>
+              <li>
+                <strong>Địa điểm tổ chức:</strong> Trường Đại học Công nghệ
+                TP.HCM - HUTECH, Khu Công nghệ cao, Phường Tăng Nhơn Phú,
+                Thành phố Thủ Đức, TP.HCM
+              </li>
+            </ul>
+
+            <h4>2. ƯU ĐÃI & CHƯƠNG TRÌNH GIẢM GIÁ TẠI HỘI SÁCH</h4>
+            <p><strong>🔥 GIỜ VÀNG - FLASH SALE 50%</strong></p>
+            <ul>
+              <li>Áp dụng mỗi ngày trong suốt thời gian hội sách</li>
+              <li>Hai khung giờ cố định: 11h00 - 13h00, 19h00 - 21h00</li>
+              <li>Mỗi ngày áp dụng cho 20 tựa sách, mỗi tựa 10 cuốn</li>
+              <li>
+                Danh sách sách Giờ Vàng được cập nhật hằng ngày trên kênh Săn
+                sale Nhã Nam
+              </li>
+              <li>
+                <em>⚠️ Số lượng có hạn, ưu đãi kết thúc sớm khi hết sách.</em>
+              </li>
+            </ul>
+
+            <p><strong>📚 GIẢM GIÁ ĐỒNG LOẠT</strong></p>
+            <ul>
+              <li>Sách mới: Giảm 30%</li>
+              <li>Sách ưu đãi: Giảm từ 40% - 80%</li>
+              <li>Combo sách: Giảm từ 40% - 50%</li>
+              <li>Đồng giá từ 10.000đ - 50.000đ</li>
+              <li>
+                Số lượng có hạn, phù hợp để săn sách giá tốt và mua quà Tết
+              </li>
+            </ul>
+
+            <h4>3. QUÀ TẶNG THEO GIÁ TRỊ ĐƠN HÀNG</h4>
+            <p>🎁 Áp dụng cho mọi đơn hàng tại hội sách:</p>
+            <ul>
+              <li>
+                Từ 100.000đ: 01 bookmark giấy tự chọn (mỗi 100.000đ được tặng
+                thêm 01 bookmark)
+              </li>
+              <li>Từ 200.000đ: 01 móc khóa + 02 bookmark</li>
+              <li>Từ 300.000đ: 01 bộ lì xì + 03 bookmark</li>
+              <li>Từ 400.000đ: 01 sổ bìa cứng + 04 bookmark</li>
+              <li>Từ 500.000đ: 01 lịch năm mới 2026 + 05 bookmark</li>
+              <li>Từ 700.000đ trở lên: 01 túi vải + 07 bookmark</li>
+            </ul>
+            <p>
+              <em>(Quà tặng có thể thay đổi tùy số lượng thực tế tại hội
+                sách)</em>
+            </p>
+
+            <h4>4. THEO DÕI & CẬP NHẬT THÔNG TIN HỘI SÁCH</h4>
+            <p>
+              Để không bỏ lỡ lịch Flash Sale, hoạt động tại hội sách và hình
+              ảnh mới nhất tại cả hai đầu cầu, bạn đọc vui lòng theo dõi:
+            </p>
+            <ul>
+              <li>Fanpage Kaleidoscope</li>
+              <li>Sự kiện Hội sách Dọn kho Đón Tết 2026 tại TP.HCM</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sidebar Related News -->
+        <aside class="news-detail-sidebar">
+          <div class="nd-sidebar-header">Các bài viết liên quan</div>
+
+          <div class="nd-related-list" id="newsDetailRelatedList">
+            <a href="#" class="nd-related-item">
+              <img src="https://placehold.co/150x110/ffffff/9f2425?text=Hoi+Sach+Tet" alt="News Image" />
+              <span class="nd-related-title">THÔNG BÁO HỘI SÁCH ĐÓN TẾT HÀ NỘI 2026</span>
+            </a>
+            <a href="#" class="nd-related-item">
+              <img src="https://placehold.co/150x110/ffffff/9f2425?text=Dong" alt="News Image" />
+              <span class="nd-related-title">THÔNG BÁO SỰ KIỆN MÙA ĐÔNG CỦA KALEIDOSCOPE</span>
+            </a>
+            <a href="#" class="nd-related-item">
+              <img src="https://placehold.co/150x110/ffffff/9f2425?text=Thu" alt="News Image" />
+              <span class="nd-related-title">THÔNG BÁO SỰ KIỆN MÙA THU CỦA KALEIDOSCOPE</span>
+            </a>
+            <a href="#" class="nd-related-item">
+              <img src="https://placehold.co/150x110/ffffff/9f2425?text=Ra+Mat+Sach" alt="News Image" />
+              <span class="nd-related-title">CÔNG BỐ RA MẮT BỘ SÁCH MỚI MÙA THU 2025</span>
+            </a>
+            <a href="#" class="nd-related-item">
+              <img src="https://placehold.co/150x110/ffffff/9f2425?text=Quoc+Khanh" alt="News Image" />
+              <span class="nd-related-title">THÔNG BÁO LỊCH NGHỈ LỄ QUỐC KHÁNH 02/09</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-logo">
+        <img src="../images/logo.png" alt="Kaleidoscope Logo"  />
+        <span class="footer-brand">Kaleidoscope</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>LIÊN HỆ</h4>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            Khu công nghệ cao<br />Phường Tăng Nhơn Phú<br />Thành phố Thủ
+            Đức, TP.HCM
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>0915 540 329 - 0917 182 50 26</div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <div>info@kaleidoscope.vn</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về Kaleidoscope</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+          <li><a href="#">Tra cứu đơn hàng</a></li>
+          <li><a href="#">Hệ thống cửa hàng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/vận chuyển</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>KẾT NỐI MXH</h4>
+        <div class="footer-socials">
+          <a title="Facebook" href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a title="Instagram" href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a title="Zalo" href="#" class="zalo"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      COPYRIGHTS &copy; 2026 by <strong>Kaleidoscope</strong>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <!-- Configuration -->
+  <script src="../js/config.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

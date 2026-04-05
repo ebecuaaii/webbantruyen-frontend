@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaleidoscope - Tin tức</title>
+  <!-- FontAwesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/news.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="social-icons">
+          <a title="Facebook" href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a title="Instagram" href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a title="Zalo" href="#" class="zalo"><i class="fa-solid fa-comment-dots"></i></a>
+        </div>
+        <span class="about-link">Về Kaleidoscope</span>
+      </div>
+      <div class="top-bar-right">
+        <i class="fa-solid fa-phone"></i>
+        <span>Contact: (+84) 97 182 50 26</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="../index.html" style="display: flex; flex-direction: column; align-items: center">
+          <img src="../images/logo.png" alt="Kaleidoscope Logo" />
+          <span class="logo-text">Kaleidoscope</span>
+        </a>
+      </div>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả..." />
+      </div>
+
+      <div class="header-actions">
+        <div class="action-item has-badge" data-badge="cart">
+          <span class="action-badge hidden"></span>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Giỏ hàng</span>
+        </div>
+        <div class="action-item has-badge" data-badge="favorite">
+          <span class="action-badge hidden"></span>
+          <i class="fa-regular fa-heart"></i>
+          <span>Yêu thích</span>
+        </div>
+        <a href="auth.html" class="action-item header-user-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="header-user-name">Tài khoản</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="products.html" class="nav-btn">TẤT CẢ SẢN PHẨM</a></li>
+        <li>
+          <a href="news.html" class="nav-btn" style="border: 1px solid #777">TIN TỨC</a>
+        </li>
+        <li><a href="about.html" class="nav-btn">GIỚI THIỆU</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <span>Tin tức</span>
+      </div>
+
+      <!-- News Page Container -->
+      <div class="news-page-container">
+        <!-- Sidebar -->
+        <aside class="news-sidebar">
+          <div class="news-sidebar-header">DANH MỤC TIN TỨC</div>
+          <ul class="news-sidebar-list">
+            <li><a href="#">TIN BẢN QUYỀN</a></li>
+            <li><a href="#">TIN BÁO CHÍ</a></li>
+            <li><a href="#">ĐỘC GIẢ REVIEW</a></li>
+            <li><a href="#">SỰ KIỆN</a></li>
+            <li><a href="#">TIN TUYỂN DỤNG</a></li>
+          </ul>
+        </aside>
+
+        <!-- Content -->
+        <div class="news-content">
+          <div class="news-content-header">TIN TỨC KALEIDOSCOPE</div>
+
+          <!-- Grid of News -->
+          <div class="news-grid" id="newsListGrid">
+            <!-- News Item 1 -->
+            <div class="news-card">
+              <img class="news-card-img" src="https://placehold.co/300x225/ffffff/9f2425?text=Hoi+Sach"
+                alt="News Image" />
+              <h3 class="news-card-title">
+                HỘI SÁCH KALEIDOSCOPE DỌN KHO ĐÓN TẾT 2026
+              </h3>
+              <p class="news-card-desc">
+                HỘI SÁCH KALEIDOSCOPE DỌN KHO ĐÓN TẾT 2026 (26/02/2026 - ...)
+              </p>
+              <div class="news-card-footer">
+                <a href="news-detail.html" class="detail-link">Chi tiết</a>
+                <span class="news-date">T5, 22/01/2026</span>
+              </div>
+            </div>
+            <!-- News Item 2 -->
+            <div class="news-card">
+              <img class="news-card-img" src="https://placehold.co/300x225/ffffff/9f2425?text=Hoi+Sach+Tet"
+                alt="News Image" />
+              <h3 class="news-card-title">
+                THÔNG BÁO HỘI SÁCH ĐÓN TẾT HÀ NỘI 2026
+              </h3>
+              <p class="news-card-desc">
+                HỘI SÁCH ĐÓN TẾT HÀ NỘI 2026 (25/12/2025 - 05/01/2026) ĐÃ
+                CHÍNH...
+              </p>
+              <div class="news-card-footer">
+                <a href="#" class="detail-link">Chi tiết</a>
+                <span class="news-date">T6, 23/12/2025</span>
+              </div>
+            </div>
+            <!-- News Item 3 -->
+            <div class="news-card">
+              <img class="news-card-img" src="https://placehold.co/300x225/ffffff/9f2425?text=Dong" alt="News Image" />
+              <h3 class="news-card-title">
+                THÔNG BÁO SỰ KIỆN MÙA ĐÔNG CỦA KALEIDOSCOPE
+              </h3>
+              <p class="news-card-desc">
+                THÔNG BÁO SỰ KIỆN MÙA ĐÔNG 2025 CỦA KALEIDOSCOPE (10/12/...
+              </p>
+              <div class="news-card-footer">
+                <a href="#" class="detail-link">Chi tiết</a>
+                <span class="news-date">T6, 05/12/2025</span>
+              </div>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="news-card">
+              <img class="news-card-img" src="https://placehold.co/300x225/ffffff/9f2425?text=Thu" alt="News Image" />
+              <h3 class="news-card-title">
+                THÔNG BÁO SỰ KIỆN MÙA THU CỦA KALEIDOSCOPE
+              </h3>
+              <p class="news-card-desc">
+                THÔNG BÁO SỰ KIỆN MÙA THU 2025 CỦA KALEIDOSCOPE (10/08/...
+              </p>
+              <div class="news-card-footer">
+                <a href="#" class="detail-link">Chi tiết</a>
+                <span class="news-date">T3, 05/08/2025</span>
+              </div>
+            </div>
+            <!-- News Item 5 -->
+            <div class="news-card">
+              <img class="news-card-img" src="https://placehold.co/300x225/ffffff/9f2425?text=Ra+Mat+Sach"
+                alt="News Image" />
+              <h3 class="news-card-title">
+                CÔNG BỐ RA MẮT BỘ SÁCH MỚI MÙA THU 2025
+              </h3>
+              <p class="news-card-desc">
+                KALEIDOSCOPE RA MẮT MỘT BỘ SÁCH MỚI MÙA THU 2025 ...
+              </p>
+              <div class="news-card-footer">
+                <a href="#" class="detail-link">Chi tiết</a>
+                <span class="news-date">T5, 31/07/2025</span>
+              </div>
+            </div>
+            <!-- News Item 6 -->
+            <div class="news-card">
+              <img class="news-card-img" src="https://placehold.co/300x225/ffffff/9f2425?text=Quoc+Khanh"
+                alt="News Image" />
+              <h3 class="news-card-title">
+                THÔNG BÁO LỊCH NGHỈ LỄ QUỐC KHÁNH 02/09
+              </h3>
+              <p class="news-card-desc">
+                Chào mừng Quốc Khánh nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam
+                02/09...
+              </p>
+              <div class="news-card-footer">
+                <a href="#" class="detail-link">Chi tiết</a>
+                <span class="news-date">CN, 31/09/2025</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <a href="#" class="page-btn"><i class="fa-solid fa-angles-left"></i></a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <span class="page-btn dots">...</span>
+            <a href="#" class="page-btn">8</a>
+            <a href="#" class="page-btn"><i class="fa-solid fa-angles-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <!-- identical to previous -->
+    <div class="container footer-inner">
+      <div class="footer-col footer-logo">
+        <img src="../images/logo.png" alt="Kaleidoscope Logo"  />
+        <span class="footer-brand">Kaleidoscope</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>LIÊN HỆ</h4>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            Khu công nghệ cao<br />Phường Tăng Nhơn Phú<br />Thành phố Thủ
+            Đức, TP.HCM
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>0915 540 329 - 0917 182 50 26</div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <div>info@kaleidoscope.vn</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về Kaleidoscope</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+          <li><a href="#">Tra cứu đơn hàng</a></li>
+          <li><a href="#">Hệ thống cửa hàng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/vận chuyển</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>KẾT NỐI MXH</h4>
+        <div class="footer-socials">
+          <a title="Facebook" href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a title="Instagram" href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a title="Zalo" href="#" class="zalo"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      COPYRIGHTS &copy; 2026 by <strong>Kaleidoscope</strong>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <!-- Configuration -->
+  <script src="../js/config.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

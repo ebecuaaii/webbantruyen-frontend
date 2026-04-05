@@ -1,0 +1,143 @@
+/* News Detail Page CSS */
+
+.news-detail-header {
+  background-color: #922121;
+  color: #fff;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.detail-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news-detail-body {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.detail-image {
+  width: 100%;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-content {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.detail-content p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.detail-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 25px 0 15px;
+}
+
+.detail-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0 12px;
+}
+
+.detail-content ul,
+.detail-content ol {
+  margin: 15px 0 15px 20px;
+}
+
+.detail-content li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.detail-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.share-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #922121;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.share-buttons a:hover {
+  background-color: #7a1a1f;
+}
+
+@media (max-width: 768px) {
+  .news-detail-header {
+    padding: 30px 0;
+  }
+
+  .detail-title {
+    font-size: 24px;
+  }
+
+  .detail-image {
+    height: 250px;
+  }
+
+  .detail-content {
+    padding: 20px;
+  }
+
+  .detail-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

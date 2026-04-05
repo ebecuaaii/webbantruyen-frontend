@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thêm sản phẩm - Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+
+<body class="admin-layout">
+  <!-- Sidebar -->
+  <aside class="admin-sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+        <span>Kaleidoscope</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-chart-line"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="admin-products.html" class="nav-item active">
+        <i class="fas fa-box"></i>
+        <span>Quản lý sản phẩm</span>
+      </a>
+      <a href="admin-categories.html" class="nav-item">
+        <i class="fas fa-list"></i>
+        <span>Quản lý danh mục</span>
+      </a>
+      <a href="admin-orders.html" class="nav-item">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Quản lý đơn hàng</span>
+      </a>
+      <a href="admin-users.html" class="nav-item">
+        <i class="fas fa-users"></i>
+        <span>Quản lý tài khoản</span>
+      </a>
+      <a href="admin-coupons.html" class="nav-item">
+        <i class="fas fa-ticket-alt"></i>
+        <span>Coupon/Khuyến mãi</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="admin-profile.html" class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Cài đặt</span>
+      </a>
+      <a href="#" class="nav-item logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Đăng xuất</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <!-- Top Bar -->
+    <header class="admin-header">
+      <div class="header-left">
+        <h1>Thêm sản phẩm mới</h1>
+      </div>
+      <div class="header-right">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Tìm kiếm..." />
+        </div>
+        <div class="notification-icon">
+          <i class="fas fa-bell"></i>
+          <span class="notification-badge">3</span>
+        </div>
+        <div class="header-user">
+          <img src="https://placehold.co/32x32/9f2425/ffffff?text=A" alt="Admin" />
+          <div class="user-info">
+            <span class="user-name">Super Admin</span>
+            <span class="user-email">admin@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="admin-content">
+      <div class="page-header">
+        <a href="admin-products.html" class="btn-back">
+          <i class="fas fa-arrow-left"></i> Quay lại
+        </a>
+      </div>
+
+      <form class="admin-form">
+        <div class="form-container">
+          <div class="form-section">
+            <h3>Thông tin cơ bản</h3>
+
+            <div class="form-group">
+              <label>Tên sản phẩm</label>
+              <input type="text" name="name" class="form-control" placeholder="Nhập tên sản phẩm..." required />
+            </div>
+
+            <div class="form-group">
+              <label>Tác giả</label>
+              <input type="text" name="author" class="form-control" placeholder="Tên tác giả..." />
+            </div>
+
+            <div class="form-group">
+              <label>Mô tả chi tiết</label>
+              <textarea name="description" class="form-control" rows="5" placeholder="Mô tả chi tiết..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Thông tin bán hàng</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Danh mục</label>
+                <select name="categoryId" class="form-control" id="categorySelect" required>
+                  <option value="">-- Chọn danh mục --</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Giá (VNĐ)</label>
+                <input type="number" name="price" class="form-control" placeholder="0" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Số lượng trong kho</label>
+                <input type="number" name="quantity" class="form-control" placeholder="0" required />
+              </div>
+
+              <div class="form-group">
+                <label>Trạng thái</label>
+                <select name="status" class="form-control" required>
+                  <option value="ACTIVE" selected>Hiển thị</option>
+                  <option value="INACTIVE">Ẩn</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Hình ảnh</h3>
+
+              <div class="form-group">
+                <label>Hình ảnh chính</label>
+                <div class="image-upload">
+                  <input type="file" class="image-picker form-control" accept="image/*">
+                  <input type="hidden" name="imageUrl"> <!-- Dữ liệu thực -->
+                  <img src="https://placehold.co/300x400/ddd/999?text=Product+Image" alt="Product"
+                    class="preview-image">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Hình ảnh bổ sung</label>
+                <div class="multiple-upload">
+                  <input type="file" class="multiple-picker form-control" accept="image/*" multiple="">
+                  <div class="image-gallery image-gallery-grid">
+                    <img src="https://placehold.co/150x150/ddd/999?text=Image+1" alt="Image 1">
+                    <img src="https://placehold.co/150x150/ddd/999?text=Image+2" alt="Image 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-actions">
+              <a href="admin-products.html" class="btn btn-secondary">
+                <i class="fas fa-times"></i> Hủy
+              </a>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Tạo sản phẩm
+              </button>
+            </div>
+          </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>

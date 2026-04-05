@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thêm danh mục - Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+
+<body class="admin-layout">
+  <!-- Sidebar -->
+  <aside class="admin-sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+        <span>Kaleidoscope</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-chart-line"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="admin-products.html" class="nav-item">
+        <i class="fas fa-box"></i>
+        <span>Quản lý sản phẩm</span>
+      </a>
+      <a href="admin-categories.html" class="nav-item active">
+        <i class="fas fa-list"></i>
+        <span>Quản lý danh mục</span>
+      </a>
+      <a href="admin-orders.html" class="nav-item">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Quản lý đơn hàng</span>
+      </a>
+      <a href="admin-users.html" class="nav-item">
+        <i class="fas fa-users"></i>
+        <span>Quản lý tài khoản</span>
+      </a>
+      <a href="admin-coupons.html" class="nav-item">
+        <i class="fas fa-ticket-alt"></i>
+        <span>Coupon/Khuyến mãi</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="admin-profile.html" class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Cài đặt</span>
+      </a>
+      <a href="#" class="nav-item logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Đăng xuất</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <!-- Top Bar -->
+    <header class="admin-header">
+      <div class="header-left">
+        <h1>Thêm danh mục mới</h1>
+      </div>
+      <div class="header-right">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Tìm kiếm..." />
+        </div>
+        <div class="notification-icon">
+          <i class="fas fa-bell"></i>
+          <span class="notification-badge">3</span>
+        </div>
+        <div class="header-user">
+          <img src="https://placehold.co/32x32/9f2425/ffffff?text=A" alt="Admin" />
+          <div class="user-info">
+            <span class="user-name">Super Admin</span>
+            <span class="user-email">admin@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="admin-content">
+      <div class="page-header">
+        <a href="admin-categories.html" class="btn-back">
+          <i class="fas fa-arrow-left"></i> Quay lại
+        </a>
+      </div>
+
+      <form class="admin-form">
+        <div class="form-container">
+          <div class="form-section">
+            <h3>Thông tin danh mục</h3>
+
+            <div class="form-group">
+              <label>Tên danh mục</label>
+              <input type="text" name="name" class="form-control" placeholder="Nhập tên danh mục..." required />
+            </div>
+
+            <div class="form-group">
+              <label>Biểu tượng (Icon)</label>
+              <input type="text" name="icon" class="form-control" placeholder="Nhập tên icon (ví dụ: fas fa-book)..." />
+            </div>
+
+            <div class="form-group">
+              <label>Mô tả</label>
+              <textarea name="description" class="form-control" rows="4"
+                placeholder="Mô tả chi tiết về danh mục..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Trạng thái</label>
+              <select name="status" class="form-control" required>
+                <option value="ACTIVE" selected>Hiển thị</option>
+                <option value="INACTIVE">Ẩn</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>Hình ảnh danh mục</h3>
+
+            <div class="form-group">
+              <label>URL Hình ảnh (Thumbnail)</label>
+              <div class="image-upload-wrapper">
+                <input type="text" name="thumbnailUrl" class="form-control"
+                  placeholder="Dán URL hoặc chọn file phía dưới..." />
+
+                <div class="file-select-area" style="margin-top: 10px;">
+                  <label class="btn btn-secondary-outline"
+                    style="cursor: pointer; display: inline-block; padding: 8px 15px; border: 1px solid #ccc; border-radius: 5px;">
+                    <i class="fas fa-upload"></i> Chọn ảnh từ máy tính
+                    <input type="file" class="image-picker hide" accept="image/*" style="display:none;" />
+                  </label>
+                </div>
+
+                <div class="preview-container"
+                  style="margin-top: 15px; border: 1px dashed #ddd; padding: 10px; text-align: center;">
+                  <img src="https://placehold.co/300x200?text=Preview" alt="Category Preview" class="preview-image"
+                    style="max-height: 200px; border-radius: 8px;" id="catPreview" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3>SEO</h3>
+
+            <div class="form-group">
+              <label>Meta Title</label>
+              <input type="text" class="form-control" placeholder="Meta title cho SEO..." />
+            </div>
+
+            <div class="form-group">
+              <label>Meta Description</label>
+              <textarea class="form-control" rows="3" placeholder="Meta description cho SEO..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Meta Keywords</label>
+              <input type="text" class="form-control" placeholder="Từ khóa SEO (cách nhau bằng dấu phẩy)..." />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <a href="admin-categories.html" class="btn btn-secondary">
+              <i class="fas fa-times"></i> Hủy
+            </a>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-plus"></i> Tạo danh mục
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>

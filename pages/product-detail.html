@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaleidoscope - Chi tiết sản phẩm</title>
+  <!-- FontAwesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/product-detail.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="social-icons">
+          <a title="Facebook" href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a title="Instagram" href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a title="Zalo" href="#" class="zalo"><i class="fa-solid fa-comment-dots"></i></a>
+        </div>
+        <span class="about-link">Về Kaleidoscope</span>
+      </div>
+      <div class="top-bar-right">
+        <i class="fa-solid fa-phone"></i>
+        <span>Contact: (+84) 97 182 50 26</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="../index.html" style="display: flex; flex-direction: column; align-items: center">
+          <img src="../images/logo.png" alt="Kaleidoscope Logo" />
+          <span class="logo-text">Kaleidoscope</span>
+        </a>
+      </div>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả..." />
+      </div>
+
+      <div class="header-actions">
+        <div class="action-item has-badge" data-badge="cart">
+          <span class="action-badge hidden"></span>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Giỏ hàng</span>
+        </div>
+        <div class="action-item has-badge" data-badge="favorite">
+          <span class="action-badge hidden"></span>
+          <i class="fa-regular fa-heart"></i>
+          <span>Yêu thích</span>
+        </div>
+        <a href="auth.html" class="action-item header-user-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="header-user-name">Tài khoản</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li>
+          <a href="products.html" class="nav-btn" style="border: 1px solid #777">TẤT CẢ SẢN PHẨM</a>
+        </li>
+        <li><a href="news.html" class="nav-btn">TIN TỨC</a></li>
+        <li><a href="about.html" class="nav-btn">GIỚI THIỆU</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="../index.html">Trang chủ</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="products.html">Tất cả sản phẩm</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="category.html">Truyện</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <a href="#">Manga</a>
+        <i class="fa-solid fa-angles-right"></i>
+        <span>Hàng xóm của tôi là Totoro (Truyện tranh màu)</span>
+      </div>
+
+      <!-- Product Detail Top -->
+      <div class="product-detail-container">
+        <!-- Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="mainImage" src="https://placehold.co/400x550/fff/333?text=Totoro+Cover" alt="Totoro" />
+          </div>
+          <div class="thumbnail-list">
+            <div class="thumbnail active">
+              <img src="https://placehold.co/400x550/fff/333?text=Totoro+Cover" alt="Thumb 1" />
+            </div>
+            <div class="thumbnail">
+              <img src="https://placehold.co/400x550/f0f0f0/333?text=Inside+Page+1" alt="Thumb 2" />
+            </div>
+            <div class="thumbnail">
+              <img src="https://placehold.co/400x550/e0e0e0/333?text=Inside+Page+2" alt="Thumb 3" />
+            </div>
+            <div class="thumbnail">
+              <img src="https://placehold.co/400x550/d0d0d0/333?text=Back+Cover" alt="Thumb 4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="product-info-detail">
+          <div class="pd-title-wrapper">
+            <h1 class="pd-title">
+              HÀNG XÓM CỦA TÔI LÀ TOTORO<br />(TRUYỆN TRANH MÀU)
+            </h1>
+            <i class="fa-regular fa-heart pd-wishlist"></i>
+          </div>
+          <div class="pd-stats">
+            <span>Đã bán: 1190</span>
+            <span>|</span>
+            <span>Đánh giá:
+              <span class="pd-rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+            </span>
+          </div>
+
+          <div class="pd-price-wrap">
+            <span class="pd-current-price">135.000đ</span>
+            <span class="pd-old-price">150.000đ</span>
+          </div>
+
+          <ul class="pd-attributes">
+            <li><strong>Mã sách:</strong> K-HXCTLT003</li>
+            <li>
+              <strong>Tác giả:</strong> Từ một bộ phim của Hayao Miyazaki
+            </li>
+            <li><strong>Đối tượng:</strong> Lớn hơn 6 tuổi</li>
+            <li><strong>Khuôn khổ:</strong> 13 x 18 cm</li>
+            <li><strong>Số trang:</strong> 144 trang/cuốn</li>
+            <li><strong>Định dạng:</strong> Bìa mềm</li>
+            <li><strong>Trọng lượng:</strong> 235 gram</li>
+          </ul>
+
+          <div class="pd-variants">
+            <h4>Phiên bản</h4>
+            <div>
+              <span class="variant-btn active">Tập 1</span>
+              <span class="variant-btn">Tập 2</span>
+              <span class="variant-btn">Combo 2 tập</span>
+              <span class="variant-btn">Combo 2 tập + Poster + ống bảo vệ</span>
+            </div>
+          </div>
+
+          <div class="pd-action-box">
+            <div class="pd-quantity">
+              <h4>Số lượng</h4>
+              <div class="qty-selector">
+                <button class="qty-btn minus">-</button>
+                <input type="text" class="qty-input" value="1" />
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+
+            <div class="pd-buy-actions">
+              <button class="btn-buy-now" onclick="buyNow()">MUA NGAY</button>
+              <button class="btn-add-cart">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Area 2 Cols -->
+      <div class="content-area-2col">
+        <!-- Description -->
+        <div class="pd-description">
+          <div class="block-header-red">MÔ TẢ SẢN PHẨM</div>
+          <div class="pd-desc-content">
+            <p>
+              Hai chị em Satsuki và Mei cùng ba chuyển về một ngôi nhà ở ngoại
+              ô, bắt đầu cuộc sống mới giữa thiên nhiên rộng lớn. Trong một
+              lần dạo chơi khu rừng gần nhà, Mei vô tình gặp gỡ một sinh vật
+              to lớn. Chẳng những không sợ hãi, cô bé còn trèo lên cái bụng bự
+              của sinh vật đó mà ngịch ngợm, và thế là cái tên "Totoro" ra
+              đời. Từ đây, hai chị em bắt đầu bước vào thế giới kỳ diệu, nơi
+              thiên nhiên tươi đẹp thầm thì những điều chỉ trẻ thơ mới có thể
+              lắng nghe...
+            </p>
+            <p>
+              Không chỉ tái hiện vẻ đẹp dịu dàng của bộ phim kinh điển vô cùng
+              được yêu thích từ Studio Ghibli, bộ truyện còn mang đến những
+              phút giây giải trí, chân thật và giàu giá trị sưu tầm...!
+            </p>
+            <p><em>Sách tặng kèm Bookmark mỗi cuốn!</em></p>
+            <p>---</p>
+            <strong>HAYAO MIYAZAKI</strong>
+            <p>
+              Ông sinh năm 1941 tại Tokyo, tốt nghiệp Đại học Gakushuin năm
+              1963 chuyên ngành Khoa học Chính trị và Kinh tế. Ông bắt đầu sự
+              nghiệp tại Toei Animation, rồi gia nhập A Production, Zuiyo,
+              Nippon Animation và Telecom, trước khi cùng Isao Takahata sáng
+              lập Studio Ghibli năm 1985.
+            </p>
+            <p>
+              Từ sau Lâu đài Cagliostro (1979) đến Cậu bé và con diệc (2023),
+              Miyazaki đã đạo diễn nhiều siêu tác phẩm như Vùng đất linh hồn -
+              Bộ phim phá vỡ kỉ lục phòng vé tại Nhật Bản (Giải Gấu Vàng Liên
+              hoan phim Quốc tế Berlin lần thứ 52, giải Oscar lần thứ 75 cho
+              phim hoạt hình xuất sắc nhất); Lâu đài bay của pháp sư Howl
+              (Giải Osella tại Liên hoan phim Quốc tế Venice lần thứ 61); Gió
+              nổi (Đề cử giải Oscar lần thứ 86 cho Phim hoạt hình xuất sắc
+              nhất). Bộ phim mới nhất, Cậu bé và con diệc cũng là tác phẩm
+              giành nhiều huy chương danh giá, bao gồm phim hoạt hình xuất sắc
+              nhất tại giải Oscar lần thứ 96, giải BAFTA, Quả cầu vàng lần thứ
+              81. Năm 2014 ông được trao Giải thưởng danh dự của Viện Hàn lâm
+              cho những cống hiến trọn đời cho điện ảnh.
+            </p>
+            <p><em>*Quà tặng chỉ dành cho bản in đầu</em></p>
+          </div>
+        </div>
+
+        <!-- Related by Author -->
+        <aside class="pd-related-sidebar">
+          <div class="block-header-red">SÁCH CÙNG TÁC GIẢ</div>
+          <div class="mini-product-list">
+            <!-- Card 1 -->
+            <div class="mini-card">
+              <img src="https://placehold.co/100x130/fff/333?text=Scan+Totoro" alt="Totoro" />
+              <div class="mini-card-info">
+                <h4 class="mini-card-title">
+                  Bản scan tranh Hàng xóm của tôi là Totoro
+                </h4>
+                <span class="mini-card-price">108.000đ</span>
+                <span class="mini-card-old-price">120.000đ</span>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mini-card">
+              <img src="https://placehold.co/100x130/fff/333?text=Art+Totoro" alt="Totoro" />
+              <div class="mini-card-info">
+                <h4 class="mini-card-title">The art of My Neighbor Totoro</h4>
+                <span class="mini-card-price">180.000đ</span>
+                <span class="mini-card-old-price">200.000đ</span>
+              </div>
+            </div>
+
+            <a href="#" class="view-more-pill">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- SÁCH CÙNG THỂ LOẠI -->
+    <section class="related-category-section">
+      <div class="container">
+        <div class="line-heading">SÁCH CÙNG THỂ LOẠI</div>
+
+        <div class="product-slider">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="discount-badge" style="background-color: #9f2425">
+                -10%
+              </div>
+              <img src="https://placehold.co/200x250/fff/333?text=Nhat+Quy" alt="Product" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                Nhất quỷ nhì ma, thứ ba (vẫn là) Takagi ...
+              </h3>
+              <p class="product-author">Miyumi INABA | Soichiro ...</p>
+              <div class="product-price">
+                <span class="current-price" style="color: #9f2425">27.000 đ</span>
+                <span class="old-price">30.000 đ</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="discount-badge" style="background-color: #9f2425">
+                -10%
+              </div>
+              <img src="https://placehold.co/200x250/fff/333?text=One+Piece" alt="Product" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">One Piece Magazine - Tập 5</h3>
+              <p class="product-author">Eiichiro Oda</p>
+              <div class="product-price">
+                <span class="current-price" style="color: #9f2425">117.000 đ</span>
+                <span class="old-price">130.000 đ</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="discount-badge" style="background-color: #9f2425">
+                -10%
+              </div>
+              <img src="https://placehold.co/200x250/fff/333?text=Conan" alt="Product" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">
+                Thám tử lừng danh Conan - Tập 107 (...
+              </h3>
+              <p class="product-author">Gosho Aoyama</p>
+              <div class="product-price">
+                <span class="current-price" style="color: #9f2425">90.000 đ</span>
+                <span class="old-price">100.000 đ</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="discount-badge" style="background-color: #9f2425">
+                -36%
+              </div>
+              <img src="https://placehold.co/200x250/fff/333?text=Mashle" alt="Product" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Mashle - Tập 18</h3>
+              <p class="product-author">Hajime Komoto</p>
+              <div class="product-price">
+                <span class="current-price" style="color: #9f2425">27.000 đ</span>
+                <span class="old-price">42.000 đ</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5 (Extra for sliding) -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="discount-badge" style="background-color: #9f2425">
+                -20%
+              </div>
+              <img src="https://placehold.co/200x250/fff/333?text=Doraemon" alt="Product" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Doraemon Truyện Ngắn - Tập 1</h3>
+              <p class="product-author">Fujiko F Fujio</p>
+              <div class="product-price">
+                <span class="current-price" style="color: #9f2425">18.000 đ</span>
+                <span class="old-price">22.500 đ</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product 6 (Extra for sliding) -->
+          <div class="product-card">
+            <div class="product-image">
+              <div class="discount-badge" style="background-color: #9f2425">
+                -15%
+              </div>
+              <img src="https://placehold.co/200x250/fff/333?text=Naruto" alt="Product" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Naruto - Tập 72</h3>
+              <p class="product-author">Masashi Kishimoto</p>
+              <div class="product-price">
+                <span class="current-price" style="color: #9f2425">21.000 đ</span>
+                <span class="old-price">25.000 đ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px">
+          <a href="#" class="btn-view-more">Xem thêm <i class="fa-solid fa-angles-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-logo">
+        <img src="../images/logo.png" alt="Kaleidoscope Logo"  />
+        <span class="footer-brand">Kaleidoscope</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>LIÊN HỆ</h4>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            Khu công nghệ cao<br />Phường Tăng Nhơn Phú<br />Thành phố Thủ
+            Đức, TP.HCM
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>0915 540 329 - 0917 182 50 26</div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <div>info@kaleidoscope.vn</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về Kaleidoscope</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+          <li><a href="#">Tra cứu đơn hàng</a></li>
+          <li><a href="#">Hệ thống cửa hàng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/vận chuyển</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>KẾT NỐI MXH</h4>
+        <div class="footer-socials">
+          <a title="Facebook" href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a title="Instagram" href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a title="Zalo" href="#" class="zalo"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      COPYRIGHTS &copy; 2026 by <strong>Kaleidoscope</strong>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <!-- Configuration -->
+  <script src="../js/config.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+  <script src="../js/product-detail.js"></script>
+</body>
+
+</html>

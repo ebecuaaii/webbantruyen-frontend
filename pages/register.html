@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Ký - Kaleidoscope</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+</head>
+
+<body class="auth-page">
+  <!-- Header with Logo -->
+  <header class="auth-header">
+    <div class="container auth-header-inner">
+      <div class="logo-group">
+        <img src="../images/logo.png" alt="Kaleidoscope" class="logo-img" />
+        <span class="logo-text">Kaleidoscope</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="auth-main">
+    <div class="auth-container">
+      <!-- Welcome Title -->
+      <h1 class="auth-title">CHÀO MỪNG BẠN ĐẾN VỚI Kaleidoscope</h1>
+
+      <!-- Register Form -->
+      <form class="auth-form" id="registerForm">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label class="form-label">Họ và tên *</label>
+          <input type="text" class="form-input" placeholder="Nhập họ và tên của bạn" name="fullName" required />
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label class="form-label">Số điện thoại *</label>
+          <input type="tel" class="form-input" placeholder="Nhập số điện thoại" name="phone" required />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" class="form-input" placeholder="Nhập địa chỉ email" name="email" required />
+        </div>
+
+        <!-- Username -->
+        <div class="form-group">
+          <label class="form-label">Tên đăng nhập *</label>
+          <input type="text" class="form-input" placeholder="Nhập tên đăng nhập" name="username" required />
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label class="form-label">Mật khẩu *</label>
+          <input type="password" class="form-input" placeholder="Nhập mật khẩu" name="password" required />
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label class="form-label">Xác nhận mật khẩu *</label>
+          <input type="password" class="form-input" placeholder="Xác nhận mật khẩu" name="confirmPassword" required />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="auth-button">ĐĂNG KÝ</button>
+      </form>
+
+      <!-- Login Link -->
+      <div class="auth-footer">
+        <p>
+          Bạn đã có tài khoản?
+          <a href="login.html" class="auth-link">Đăng nhập</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Configuration -->
+  <script src="../js/config.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaleidoscope - Tất cả sản phẩm</title>
+  <!-- FontAwesome from CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <div class="social-icons">
+          <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="zalo"><i class="fa-solid fa-comment-dots"></i></a>
+        </div>
+        <span class="about-link">Về Kaleidoscope</span>
+      </div>
+      <div class="top-bar-right">
+        <i class="fa-solid fa-phone"></i>
+        <span>Contact: (+84) 97 182 50 26</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="../index.html" style="display: flex; flex-direction: column; align-items: center">
+          <img src="../images/logo.png" alt="Kaleidoscope Logo" />
+          <span class="logo-text">Kaleidoscope</span>
+        </a>
+      </div>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả..." />
+      </div>
+
+      <div class="header-actions">
+        <div class="action-item has-badge" data-badge="cart">
+          <span class="action-badge hidden"></span>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Giỏ hàng</span>
+        </div>
+        <div class="action-item has-badge" data-badge="favorite">
+          <span class="action-badge hidden"></span>
+          <i class="fa-regular fa-heart"></i>
+          <span>Yêu thích</span>
+        </div>
+        <a href="auth.html" class="action-item header-user-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="header-user-name">Tài khoản</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="nav-btn" style="border: 1px solid #777">TẤT CẢ SẢN PHẨM</a>
+        </li>
+        <li><a href="news.html" class="nav-btn">TIN TỨC</a></li>
+        <li><a href="about.html" class="nav-btn">GIỚI THIỆU</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="../index.html">Trang chủ</a>
+      <i class="fa-solid fa-angles-right"></i>
+      <span>Tất cả sản phẩm</span>
+    </div>
+
+    <div class="page-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Danh mục sản phẩm -->
+        <div class="sidebar-block">
+          <div class="sidebar-header">
+            <span>DANH MỤC SẢN PHẨM</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="sidebar-body">
+            <ul class="category-list">
+              <li><a href="#" class="cate-pill">TẤT CẢ SẢN PHẨM</a></li>
+              <li>
+                <a href="#">TRUYỆN</a>
+                <ul class="sub-category">
+                  <li><a href="#">MANGA</a></li>
+                  <li><a href="category.html">LIGHT NOVEL</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" style="margin-top: 10px">MERCH</a>
+                <ul class="sub-category">
+                  <li><a href="#">BLINDBOX</a></li>
+                  <li><a href="#">CARD</a></li>
+                  <li><a href="#">STANDEE</a></li>
+                  <li><a href="#">FIGURE</a></li>
+                  <li><a href="#">THÚ NHỒI BÔNG</a></li>
+                  <li><a href="#">MÓC KHOÁ</a></li>
+                  <li><a href="#">PHỤ KIỆN KHÁC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Khoảng giá -->
+        <div class="sidebar-block">
+          <div class="sidebar-header">
+            <span>KHOẢNG GIÁ</span>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="sidebar-body price-filter">
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Tất cả mức giá</span>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Dưới 100.000đ</span>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Từ 100.000đ - 200.000đ</span>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Từ 200.000đ - 300.000đ</span>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Từ 300.000đ - 400.000đ</span>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Từ 400.000đ - 500.000đ</span>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <span>Trên 500.000đ</span>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- TRUYỆN Section -->
+        <div class="product-section">
+          <div class="section-full-header">TRUYỆN</div>
+          <div class="product-grid-3">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge">-10%</div>
+                <img src="https://placehold.co/200x250/fff/333?text=Spy+x+Family" alt="Spy X Family" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Spy X Family - Tập 13</h3>
+                <p class="product-author">Tatsuya Endo</p>
+                <div class="product-price">
+                  <span class="current-price">27.000 đ</span>
+                  <span class="old-price">30.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge">-10%</div>
+                <img src="https://placehold.co/200x250/fff/333?text=Totoro" alt="Totoro" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  (Tập lẻ) Hàng xóm của tôi TOTORO...
+                </h3>
+                <p class="product-author">Hayao Miyazaki</p>
+                <div class="product-price">
+                  <span class="current-price">67.500 đ</span>
+                  <span class="old-price">75.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge">-10%</div>
+                <img src="https://placehold.co/200x250/fff/333?text=Conan" alt="Conan" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Thám tử lừng danh Conan - Hoạt hình...
+                </h3>
+                <p class="product-author">Gosho Aoyama</p>
+                <div class="product-price">
+                  <span class="current-price">54.000 đ</span>
+                  <span class="old-price">60.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge">-10%</div>
+                <img src="https://placehold.co/200x250/fff/333?text=Ngon+ngu" alt="Ngon ngu" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">(Tập lẻ) Ngôn ngữ yêu thương</h3>
+                <p class="product-author">Suu Morishita</p>
+                <div class="product-price">
+                  <span class="current-price">27.000 đ</span>
+                  <span class="old-price">30.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge">-10%</div>
+                <img src="https://placehold.co/200x250/fff/333?text=Monster" alt="Monster" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  MONSTER - Deluxe Edition - Tập 2
+                </h3>
+                <p class="product-author">Naoki Urasawa</p>
+                <div class="product-price">
+                  <span class="current-price">112.500 đ</span>
+                  <span class="old-price">125.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge">-13%</div>
+                <img src="https://placehold.co/200x250/fff/333?text=Orange" alt="Orange" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Boxset Orange - Lá thư từ tương lai (7...
+                </h3>
+                <p class="product-author">Takano Ichigo</p>
+                <div class="product-price">
+                  <span class="current-price">283.500 đ</span>
+                  <span class="old-price">327.000 đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-more-container">
+            <a href="#" class="btn-view-more">Xem thêm <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+
+        <!-- MERCH Section -->
+        <div class="product-section">
+          <div class="section-full-header">MERCH</div>
+          <div class="product-grid-3">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge" style="background-color: #9f2425">
+                  -12%
+                </div>
+                <img src="https://placehold.co/200x250/fff/333?text=Frieren" alt="Frieren" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Acrylic Stand-Frieren: Beyond Journey's End Ver A (Frieren)
+                </h3>
+                <p class="product-author"></p>
+                <div class="product-price">
+                  <span class="current-price">159.000 đ</span>
+                  <span class="old-price">180.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge" style="background-color: #9f2425">
+                  -54%
+                </div>
+                <img src="https://placehold.co/200x250/fff/333?text=Badge+MHA" alt="Badge MHA" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Badge nhân phẩm My Hero Academia Vol 2
+                </h3>
+                <p class="product-author"></p>
+                <div class="product-price">
+                  <span class="current-price">30.000 đ</span>
+                  <span class="old-price">65.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge" style="background-color: #9f2425">
+                  -22%
+                </div>
+                <img src="https://placehold.co/200x250/fff/333?text=The+Haikyuu" alt="The Haikyuu" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  BST Thẻ "Ticket-like Collection" nhân phẩm Haikyuu
+                </h3>
+                <p class="product-author"></p>
+                <div class="product-price">
+                  <span class="current-price">35.000 đ</span>
+                  <span class="old-price">45.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge" style="background-color: #9f2425">
+                  -83%
+                </div>
+                <img src="https://placehold.co/200x250/fff/333?text=Moc+Khoa" alt="Moc Khoa" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Móc Khóa Acrylic "Link Coordination" Spy x Family
+                </h3>
+                <p class="product-author"></p>
+                <div class="product-price">
+                  <span class="current-price">35.000 đ</span>
+                  <span class="old-price">200.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge" style="background-color: #9f2425">
+                  -54%
+                </div>
+                <img src="https://placehold.co/200x250/fff/333?text=The+Clear" alt="The Clear" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Thẻ Clear nhân phẩm Sakamoto Days
+                </h3>
+                <p class="product-author"></p>
+                <div class="product-price">
+                  <span class="current-price">30.000 đ</span>
+                  <span class="old-price">65.000 đ</span>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <div class="discount-badge" style="background-color: #9f2425">
+                  -16%
+                </div>
+                <img src="https://placehold.co/200x250/fff/333?text=Figure+Miku" alt="Figure Miku" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">
+                  Figure Hatsune Miku Citron Macaron ver
+                </h3>
+                <p class="product-author"></p>
+                <div class="product-price">
+                  <span class="current-price">380.000 đ</span>
+                  <span class="old-price">450.000 đ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-more-container">
+            <a href="#" class="btn-view-more">Xem thêm <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-logo">
+        <img src="../images/logo.png" alt="Kaleidoscope Logo"  />
+        <span class="footer-brand">Kaleidoscope</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>LIÊN HỆ</h4>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            Khu công nghệ cao<br />Phường Tăng Nhơn Phú<br />Thành phố Thủ
+            Đức, TP.HCM
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>0915 540 329 - 0917 182 50 26</div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <div>info@kaleidoscope.vn</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về Kaleidoscope</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+          <li><a href="#">Tra cứu đơn hàng</a></li>
+          <li><a href="#">Hệ thống cửa hàng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/vận chuyển</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>KẾT NỐI MXH</h4>
+        <div class="footer-socials">
+          <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="zalo"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      COPYRIGHTS &copy; 2026 by <strong>Kaleidoscope</strong>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->    <!-- Configuration -->
+    <script src="../js/config.js"></script>
+    <!-- Custom JS -->  <script src="../js/main.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quản lý tài khoản - Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+
+<body class="admin-layout">
+  <!-- Sidebar -->
+  <aside class="admin-sidebar">
+    <div class="sidebar-header">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+        <span>Kaleidoscope</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="admin-dashboard.html" class="nav-item">
+        <i class="fas fa-chart-line"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="admin-products.html" class="nav-item">
+        <i class="fas fa-box"></i>
+        <span>Quản lý sản phẩm</span>
+      </a>
+      <a href="admin-categories.html" class="nav-item">
+        <i class="fas fa-list"></i>
+        <span>Quản lý danh mục</span>
+      </a>
+      <a href="admin-orders.html" class="nav-item">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Quản lý đơn hàng</span>
+      </a>
+      <a href="admin-users.html" class="nav-item active">
+        <i class="fas fa-users"></i>
+        <span>Quản lý tài khoản</span>
+      </a>
+      <a href="admin-coupons.html" class="nav-item">
+        <i class="fas fa-ticket-alt"></i>
+        <span>Coupon/Khuyến mãi</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="admin-profile.html" class="nav-item">
+        <i class="fas fa-cog"></i>
+        <span>Cài đặt</span>
+      </a>
+      <a href="#" class="nav-item logout">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Đăng xuất</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="admin-main">
+    <!-- Top Bar -->
+    <header class="admin-header">
+      <div class="header-left">
+        <h1>Quản lý tài khoản</h1>
+      </div>
+      <div class="header-right">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Tìm kiếm..." />
+        </div>
+        <div class="notification-icon">
+          <i class="fas fa-bell"></i>
+          <span class="notification-badge">3</span>
+        </div>
+        <div class="header-user">
+          <img src="https://placehold.co/32x32/9f2425/ffffff?text=A" alt="Admin" />
+          <div class="user-info">
+            <span class="user-name">Super Admin</span>
+            <span class="user-email">admin@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="admin-content">
+      <div class="page-header" style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
+        <i class="fas fa-arrow-left" style="cursor:pointer; font-size:20px;" onclick="history.back()"></i>
+        <h2 style="font-size:28px; font-weight:800; text-transform:uppercase; margin:0;">Quản lý tài khoản</h2>
+      </div>
+
+      <div class="table-controls"
+        style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; gap:12px;">
+        <div
+          style="display:flex; align-items:center; background:#f5f5f5; border-radius:8px; padding:8px 16px; flex:1; max-width:500px; gap:8px;">
+          <i class="fas fa-search" style="color:#999;"></i>
+          <input id="userSearchInput" type="text" placeholder="Tìm kiếm theo tên, email, sđt"
+            style="border:none; background:transparent; outline:none; width:100%; font-size:14px;" />
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <select id="userSortSelect"
+            style="border:1px solid #ddd; border-radius:8px; padding:8px 16px; font-size:14px; cursor:pointer; outline:none;">
+            <option value="newest">Sắp xếp: Mới nhất</option>
+            <option value="oldest">Sắp xếp: Cũ nhất</option>
+            <option value="name">Sắp xếp: Tên A-Z</option>
+          </select>
+          <button class="btn-create" onclick="window.location.href='admin-user-add.html'"
+            style="background:#9f2425; color:#fff; padding:8px 20px; border:none; border-radius:8px; cursor:pointer; font-weight:600; white-space:nowrap;">
+            <i class="fas fa-plus"></i> Tạo mới
+          </button>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Người dùng</th>
+              <th>Vai trò</th>
+              <th>Số điện thoại</th>
+              <th>Email</th>
+              <th>Ngày đăng ký</th>
+              <th>Trạng thái</th>
+              <th>Tác vụ</th>
+            </tr>
+          </thead>
+          <tbody id="adminUserTableBody">
+            <tr>
+              <td colspan="7" style="text-align:center">Đang tải danh sách người dùng...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination" id="adminUserPagination"></div>
+    </main>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleidoscope - Light Novel</title>
+    <!-- FontAwesome from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <div class="social-icons">
+                    <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="zalo"><i class="fa-solid fa-comment-dots"></i></a>
+                </div>
+                <span class="about-link">Về Kaleidoscope</span>
+            </div>
+            <div class="top-bar-right">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact: (+84) 97 182 50 26</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="../index.html" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="../images/logo.png" alt="Kaleidoscope Logo">
+                    <span class="logo-text">Kaleidoscope</span>
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Tìm kiếm truyện hoặc tác giả...">
+            </div>
+
+            <div class="header-actions">
+                <div class="action-item has-badge" data-badge="cart">
+                    <span class="action-badge hidden"></span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Giỏ hàng</span>
+                </div>
+                <div class="action-item has-badge" data-badge="favorite">
+                    <span class="action-badge hidden"></span>
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Yêu thích</span>
+                </div>
+                <a href="auth.html" class="action-item header-user-link">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="header-user-name">Tài khoản</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="products.html" class="nav-btn" style="border: 1px solid #777;">TẤT CẢ SẢN PHẨM</a></li>
+                <li><a href="news.html" class="nav-btn">TIN TỨC</a></li>
+                <li><a href="about.html" class="nav-btn">GIỚI THIỆU</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <a href="../index.html">Trang chủ</a>
+            <i class="fa-solid fa-angles-right"></i>
+            <a href="products.html">Tất cả sản phẩm</a>
+            <i class="fa-solid fa-angles-right"></i>
+            <span>Truyện</span>
+        </div>
+
+        <div class="page-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Danh mục sản phẩm -->
+                <div class="sidebar-block">
+                    <div class="sidebar-header">
+                        <span>DANH MỤC SẢN PHẨM</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="sidebar-body">
+                        <ul class="category-list">
+                            <li><a href="products.html">TẤT CẢ SẢN PHẨM</a></li>
+                            <li>
+                                <a href="#">TRUYỆN</a>
+                                <ul class="sub-category">
+                                    <li><a href="#">MANGA</a></li>
+                                    <li><a href="#" class="cate-pill">LIGHT NOVEL</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" style="margin-top:10px;">MERCH</a>
+                                <ul class="sub-category">
+                                    <li><a href="#">BLINDBOX</a></li>
+                                    <li><a href="#">CARD</a></li>
+                                    <li><a href="#">STANDEE</a></li>
+                                    <li><a href="#">FIGURE</a></li>
+                                    <li><a href="#">THÚ NHỒI BÔNG</a></li>
+                                    <li><a href="#">MÓC KHOÁ</a></li>
+                                    <li><a href="#">PHỤ KIỆN KHÁC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Khoảng giá -->
+                <div class="sidebar-block">
+                    <div class="sidebar-header">
+                        <span>KHOẢNG GIÁ</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="sidebar-body price-filter">
+                        <label class="filter-item">
+                            <input type="checkbox">
+                            <span>Tất cả mức giá</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox">
+                            <span>Dưới 100.000đ</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox" checked>
+                            <span>Từ 100.000đ - 200.000đ</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox">
+                            <span>Từ 200.000đ - 300.000đ</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox">
+                            <span>Từ 300.000đ - 400.000đ</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox">
+                            <span>Từ 400.000đ - 500.000đ</span>
+                        </label>
+                        <label class="filter-item">
+                            <input type="checkbox">
+                            <span>Trên 500.000đ</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Product Section -->
+                <div class="product-section">
+                    <div class="section-full-header">
+                        LIGHT NOVEL
+                    </div>
+                    <div class="product-grid-3">
+                        <!-- P1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-22%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Overlord+10" alt="Overlord">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Overlord - 10</h3>
+                                <p class="product-author">Maruyama Kugane</p>
+                                <div class="product-price">
+                                    <span class="current-price">148.200 đ</span>
+                                    <span class="old-price">190.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-25%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Suzume" alt="Suzume">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Khóa Chặt Cửa Nào Suzume (Bìa Mềm)</h3>
+                                <p class="product-author">Shinkai Makoto</p>
+                                <div class="product-price">
+                                    <span class="current-price">108.750 đ</span>
+                                    <span class="old-price">145.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-25%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Ben+Kia" alt="Ben Kia May Troi">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Bên Kia Mây Trời Là Nơi Hẹn Ước</h3>
+                                <p class="product-author">Kanoh Arata</p>
+                                <div class="product-price">
+                                    <span class="current-price">108.750 đ</span>
+                                    <span class="old-price">145.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P4 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-12%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Your+Name" alt="Your Name">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Your name. - The Official Visual Guide</h3>
+                                <p class="product-author">Shinkai Makoto</p>
+                                <div class="product-price">
+                                    <span class="current-price">123.200 đ</span>
+                                    <span class="old-price">140.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P5 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-27%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Overlord+5" alt="Overlord 5">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Overlord - 5 (Light Novel)</h3>
+                                <p class="product-author">Maruyama Kugane</p>
+                                <div class="product-price">
+                                    <span class="current-price">116.800 đ</span>
+                                    <span class="old-price">160.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P6 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-27%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Overlord+6" alt="Overlord 6">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Overlord - 6 (Light Novel)</h3>
+                                <p class="product-author">Maruyama Kugane</p>
+                                <div class="product-price">
+                                    <span class="current-price">116.800 đ</span>
+                                    <span class="old-price">160.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P7 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-22%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Overlord+10" alt="Overlord 10">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Overlord - 10 (Light Novel)</h3>
+                                <p class="product-author">Maruyama Kugane</p>
+                                <div class="product-price">
+                                    <span class="current-price">116.800 đ</span>
+                                    <span class="old-price">160.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P8 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-25%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Beatless" alt="Beatless">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Beatless - 2</h3>
+                                <p class="product-author">Satoshi Hase</p>
+                                <div class="product-price">
+                                    <span class="current-price">105.000 đ</span>
+                                    <span class="old-price">140.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P9 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-22%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Overlord+9" alt="Overlord 9">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Overlord - 9 (Light Novel)</h3>
+                                <p class="product-author">Maruyama Kugane</p>
+                                <div class="product-price">
+                                    <span class="current-price">116.800 đ</span>
+                                    <span class="old-price">160.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P10 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-30%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Suzume+Bia+Cung" alt="Suzume Cung">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Khóa Chặt Cửa Nào Suzume (Bìa Cứng)</h3>
+                                <p class="product-author">Shinkai Makoto</p>
+                                <div class="product-price">
+                                    <span class="current-price">133.000 đ</span>
+                                    <span class="old-price">190.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P11 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-22%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Another" alt="Another">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Another (Bộ 2 Tập)</h3>
+                                <p class="product-author">Yukito Ayatsuji</p>
+                                <div class="product-price">
+                                    <span class="current-price">140.400 đ</span>
+                                    <span class="old-price">180.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P12 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-22%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=Phao+Hoa" alt="Phao Hoa">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">(Light Novel 2 tập) Pháo Hoa,...</h3>
+                                <p class="product-author">Sunji Iwai</p>
+                                <div class="product-price">
+                                    <span class="current-price">130.000 đ</span>
+                                    <span class="old-price"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P13 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-27%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=86" alt="86">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">86 - Eightysix - 8</h3>
+                                <p class="product-author">Asato Asato</p>
+                                <div class="product-price">
+                                    <span class="current-price">105.850 đ</span>
+                                    <span class="old-price">145.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P14 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-27%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=86" alt="86">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">86 - Eightysix - 6</h3>
+                                <p class="product-author">Asato Asato</p>
+                                <div class="product-price">
+                                    <span class="current-price">105.850 đ</span>
+                                    <span class="old-price">145.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- P15 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="discount-badge">-27%</div>
+                                <img src="https://placehold.co/200x250/fff/333?text=86" alt="86">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">86 - Eightysix - 5</h3>
+                                <p class="product-author">Asato Asato</p>
+                                <div class="product-price">
+                                    <span class="current-price">105.850 đ</span>
+                                    <span class="old-price">145.000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-btn"><i class="fa-solid fa-angles-left"></i></a>
+                        <a href="#" class="page-btn active">1</a>
+                        <a href="#" class="page-btn">2</a>
+                        <a href="#" class="page-btn">3</a>
+                        <span class="page-btn dots">...</span>
+                        <a href="#" class="page-btn">8</a>
+                        <a href="#" class="page-btn"><i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-inner">
+            <div class="footer-col footer-logo">
+                <img src="../images/logo.png" alt="Kaleidoscope Logo" style="filter: brightness(0) invert(1);">
+                <span class="footer-brand">Kaleidoscope</span>
+            </div>
+
+            <div class="footer-col">
+                <h4>LIÊN HỆ</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>Khu công nghệ cao<br>Phường Tăng Nhơn Phú<br>Thành phố Thủ Đức, TP.HCM</div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>0915 540 329 - 0917 182 50 26</div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>info@kaleidoscope.vn</div>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>GIỚI THIỆU</h4>
+                <ul>
+                    <li><a href="#">Về Kaleidoscope</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ với chúng tôi</a></li>
+                    <li><a href="#">Tra cứu đơn hàng</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>CHÍNH SÁCH</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+                    <li><a href="#">Chính sách thanh toán/vận chuyển</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>KẾT NỐI MXH</h4>
+                <div class="footer-socials">
+                    <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="zalo"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            COPYRIGHTS &copy; 2026 by <strong>Kaleidoscope</strong>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <!-- Configuration -->
+    <script src="../js/config.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/category.js"></script>
+</body>
+
+</html>
